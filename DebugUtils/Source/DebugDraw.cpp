@@ -30,7 +30,7 @@ duDebugDraw::~duDebugDraw()
 
 unsigned int duDebugDraw::polyToCol(const struct dtPoly* poly)
 {
-	if (poly->getArea() == 0)
+	if (poly->getArea() == 63)
 	{
 		// Treat zero area type as default.
 		return duRGBA(0, 192, 255, 255);
